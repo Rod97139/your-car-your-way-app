@@ -1,9 +1,13 @@
-<h1>Angular Router App</h1>
-<nav>
-  <ul>
-    <li><a routerLink="chat" routerLinkActive="active" ariaCurrentWhenActive="page">Chat</a></li>
-    <li><a routerLink="" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a></li>
+<header class="header">
+<nav class="navbar">
+  <a routerLink="" routerLinkActive="active" ariaCurrentWhenActive="page">
+    <img priority ngSrc="assets/img.png" alt="Your Car Your Way" class="nav-logo" height="118" width="180"/>
+  </a>
+  <h1 class="nav-title">Your Car Your Way</h1>
+  <ul class="nav-links">
+    <li class="nav-link"><a routerLink="chat" routerLinkActive="active" ariaCurrentWhenActive="page"><i class="fa-solid fa-comments"></i>Chat</a></li>
   </ul>
 </nav>
+</header>
 <!-- The routed views render in the <router-outlet>-->
 <router-outlet />
